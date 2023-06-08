@@ -1,151 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn JS Application</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img class="img-fluid" src="img/js.png" alt="JS" width="50" height="50">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Методы
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="string.html">Строк</a></li>
-                  <li><a class="dropdown-item" href="array.html">Массивов</a></li>
-                  <li><a class="dropdown-item" href="#">Обьетов</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Собеседование
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">по HTML</a></li>
-                  <li><a class="dropdown-item" href="#">по CSS</a></li>
-                  <li><a class="dropdown-item" href="#">по JS</a></li>
-                  <li><a class="dropdown-item" href="#">Web Технологии</a></li>
-                  <li><a class="dropdown-item" href="#">React</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Задачи
-                </a>
-              </li>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="img-fluid" src="img/js.png" alt="JS" width="50" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Методы </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="string.html">Строк</a></li>
+                <li><a class="dropdown-item" href="array.html">Массивов</a></li>
+                <li><a class="dropdown-item" href="#">Обьетов</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Собеседование </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">по HTML</a></li>
+                <li><a class="dropdown-item" href="#">по CSS</a></li>
+                <li><a class="dropdown-item" href="js-sobesed.html">по JS</a></li>
+                <li><a class="dropdown-item" href="#">Web Технологии</a></li>
+                <li><a class="dropdown-item" href="#">React</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Задачи </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center">Язык JavaScript</h1>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Основы JS</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/strict-mode">Строгий режим — "use strict"</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/variables">Переменные</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/types">Типы данных</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/type-conversions">Преобразование типов</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/operators">Базовые операторы, математика</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/comparison">Операторы сравнения</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/ifelse">Условное ветвление: if, '?'</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/logical-operators">Логические операторы</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/nullish-coalescing-operator">Оператор нулевого слияния (??)</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/while-for">Циклы while и for</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/switchr">Конструкция "switch"</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/function-basics">Функции</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/function-expressions">Function Expression</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/arrow-functions-basics">Стрелочные функции, основы</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/javascript-specials">Особенности JavaScript</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/debugging-chrome">Отладка в браузере</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Объекты: основы</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/object">Объекты</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/object-copy">Копирование объектов и ссылки</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/object-methods">Методы объекта, "this"</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/constructor-new">Конструктор, оператор "new"</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/optional-chaining">Опциональная цепочка '?.'</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/symbol">Тип данных Symbol</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/object-toprimitive">Преобразование объектов в примитивы</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Типы данных</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/primitives-methods">Методы примитивов</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/number">Числа</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/string">Строки</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/array">Массивы</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/array-methods">Методы массивов</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/iterable">Перебираемые объекты</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/map-set">Map и Set</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/weakmap-weakset">WeakMap и WeakSet</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/weakmap-weakset">WeakMap и WeakSet</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/keys-values-entries">Object.keys, values, entries</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/destructuring-assignment">Деструктурирующее присваивание</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/date">Дата и время</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/json">Формат JSON, метод toJSON</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h1 class="text-center">Продвинутая работа с функциями</h1>
+            <ul>
+              <li><a target="_blank" href="https://learn.javascript.ru/recursion">Рекурсия и стек</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/rest-parameters-spread-operator">Остаточные параметры и оператор расширения</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/closure">Замыкание</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/array">Массивы</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/var">Устаревшее ключевое слово "var"</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/global-object">Глобальный объект</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/function-object">Объект функции, NFE</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/new-function">Синтаксис "new Function"</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/settimeout-setinterval">Планирование: setTimeout и setInterval</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/call-apply-decorators">Декораторы и переадресация вызова, call/apply</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/bind">Привязка контекста к функции</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/arrow-functions">Повторяем стрелочные функции</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/json">Формат JSON, метод toJSON</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h1 class="text-center">Свойства объекта, их конфигурация</h1>
+            <ul>
+              <li><a target="_blank" href="https://learn.javascript.ru/property-descriptors">Флаги и дескрипторы свойств</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/property-accessors">Свойства - геттеры и сеттеры</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h1 class="text-center">Прототипы, наследование</h1>
+            <ul>
+              <li><a target="_blank" href="https://learn.javascript.ru/prototype-inheritance">Прототипное наследование</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/function-prototype">F.prototype</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/native-prototypes">Встроенные прототипы</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/prototype-methods">Методы прототипов, объекты без свойства __proto__</a></li>
             </ul>
           </div>
         </div>
-      </nav>
-      <div class="container">
-        <h1 class="text-center">Язык JavaScript</h1>
         <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <h1 class="text-center">Основы JS</h1>
-                <ul>
-                    <li><a target="_blank" href="https://learn.javascript.ru/strict-mode">Строгий режим — "use strict"</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/variables">Переменные</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/types">Типы данных</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/type-conversions">Преобразование типов</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/operators">Базовые операторы, математика</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/comparison">Операторы сравнения</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/ifelse">Условное ветвление: if, '?'</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/logical-operators">Логические операторы</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/nullish-coalescing-operator">Оператор нулевого слияния (??)</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/while-for">Циклы while и for</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/switchr">Конструкция "switch"</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/function-basics">Функции</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/function-expressions">Function Expression</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/arrow-functions-basics">Стрелочные функции, основы</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/javascript-specials">Особенности JavaScript</a></li>
-                    <li><a target="_blank" href="https://learn.javascript.ru/debugging-chrome">Отладка в браузере</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h1 class="text-center">Объекты: основы</h1>
-            <ul>
-                <li><a target="_blank" href="https://learn.javascript.ru/object">Объекты</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/object-copy">Копирование объектов и ссылки</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/object-methods">Методы объекта, "this"</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/constructor-new">Конструктор, оператор "new"</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/optional-chaining">Опциональная цепочка '?.'</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/symbol">Тип данных Symbol</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/object-toprimitive">Преобразование объектов в примитивы</a></li>
-            </ul>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h1 class="text-center">Типы данных</h1>
-            <ul>
-                <li><a target="_blank" href="https://learn.javascript.ru/primitives-methods">Методы примитивов</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/number">Числа</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/string">Строки</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/array">Массивы</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/array-methods">Методы массивов</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/iterable">Перебираемые объекты</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/map-set">Map и Set</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/weakmap-weakset">WeakMap и WeakSet</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/weakmap-weakset">WeakMap и WeakSet</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/keys-values-entries">Object.keys, values, entries</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/destructuring-assignment">Деструктурирующее присваивание</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/date">Дата и время</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/json">Формат JSON, метод toJSON</a></li>
-            </ul>
-          </div>
-          <div class="row">
-              <div class="col-md-4 col-sm-12">
-                <h1 class="text-center">Продвинутая работа с функциями</h1>
-            <ul>
-                <li><a target="_blank" href="https://learn.javascript.ru/recursion">Рекурсия и стек</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/rest-parameters-spread-operator">Остаточные параметры и оператор расширения</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/closure">Замыкание</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/array">Массивы</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/var">Устаревшее ключевое слово "var"</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/global-object">Глобальный объект</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/function-object">Объект функции, NFE</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/new-function">Синтаксис "new Function"</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/settimeout-setinterval">Планирование: setTimeout и setInterval</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/call-apply-decorators">Декораторы и переадресация вызова, call/apply</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/bind">Привязка контекста к функции</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/arrow-functions">Повторяем стрелочные функции</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/json">Формат JSON, метод toJSON</a></li>
-            </ul>
-            </div> 
-            <div class="col-md-4 col-sm-12">
-              <h1 class="text-center">Свойства объекта, их конфигурация</h1>
-              <ul>
-                <li><a target="_blank" href="https://learn.javascript.ru/property-descriptors">Флаги и дескрипторы свойств</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/property-accessors">Свойства - геттеры и сеттеры</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <h1 class="text-center">Прототипы, наследование</h1>
-              <ul>
-                <li><a target="_blank" href="https://learn.javascript.ru/prototype-inheritance">Прототипное наследование</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/function-prototype">F.prototype</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/native-prototypes">Встроенные прототипы</a></li>
-                <li><a target="_blank" href="https://learn.javascript.ru/prototype-methods">Методы прототипов, объекты без свойства __proto__</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <h1 class="text-center">Классы</h1>
+          <div class="col-md-4 col-sm-12">
+            <h1 class="text-center">Классы</h1>
             <ul>
               <li><a target="_blank" href="https://learn.javascript.ru/class">Класс: базовый синтаксис</a></li>
               <li><a target="_blank" href="https://learn.javascript.ru/class-inheritance">Наследование классов</a></li>
@@ -155,13 +149,13 @@
               <li><a target="_blank" href="https://learn.javascript.ru/instanceof">Проверка класса: "instanceof"</a></li>
               <li><a target="_blank" href="https://learn.javascript.ru/mixins">Примеси</a></li>
             </ul>
-          </div> 
+          </div>
           <div class="col-md-4 col-sm-12">
             <h1 class="text-center">Обработка ошибок</h1>
             <ul>
               <li><a target="_blank" href="https://learn.javascript.ru/try-catch">Обработка ошибок, "try..catch"</a></li>
               <li><a target="_blank" href="https://learn.javascript.ru/custom-errors">Пользовательские ошибки, расширение Error</a></li>
-          </ul>
+            </ul>
           </div>
           <div class="col-md-4 col-sm-12">
             <h1 class="text-center">Промисы, async/await</h1>
@@ -174,30 +168,89 @@
               <li><a target="_blank" href="https://learn.javascript.ru/promise-api">Промисификация</a></li>
               <li><a target="_blank" href="https://learn.javascript.ru/microtask-queue">Микрозадачи</a></li>
               <li><a target="_blank" href="https://learn.javascript.ru/async-await">Async/await</a></li>
-          </ul>
+            </ul>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <h1 class="text-center">Генераторы, продвинутая итерация</h1>
-          <ul>
-            <li><a target="_blank" href="https://learn.javascript.ru/generators">Генераторы</a></li>
-            <li><a target="_blank" href="https://learn.javascript.ru/async-iterators-generators">Асинхронные итераторы и генераторы</a></li>
-          </ul>
-        </div> 
+            <ul>
+              <li><a target="_blank" href="https://learn.javascript.ru/generators">Генераторы</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/async-iterators-generators">Асинхронные итераторы и генераторы</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h1 class="text-center">Модули</h1>
+            <ul>
+              <li><a target="_blank" href="https://learn.javascript.ru/modules-intro">Модули, введение</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/custom-errors">Экспорт и импорт</a></li>
+              <li><a target="_blank" href="https://learn.javascript.ru/modules-dynamic-imports">Динамические импорты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center mt-4 mb-4">Браузер: документ, события, интерфейсы</h1>
+      <div class="row">
         <div class="col-md-4 col-sm-12">
-          <h1 class="text-center">Модули</h1>
+          <h1 class="text-center">Документ</h1>
           <ul>
-            <li><a target="_blank" href="https://learn.javascript.ru/modules-intro">Модули, введение</a></li>
-            <li><a target="_blank" href="https://learn.javascript.ru/custom-errors">Экспорт и импорт</a></li>
-            <li><a target="_blank" href="https://learn.javascript.ru/modules-dynamic-imports">Динамические импорты</a></li>
-        </ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/browser-environment">Браузерное окружение, спецификации</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/dom-nodes">DOM-дерево</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/dom-navigation">Навигация по DOM-элементам</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/searching-elements-dom">Поиск: getElement*, querySelector*</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/basic-dom-node-properties">Свойства узлов: тип, тег и содержимое</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/dom-attributes-and-properties">Атрибуты и свойства</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/modifying-document">Изменение документа</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/styles-and-classes">Стили и классы</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/size-and-scroll">Размеры и прокрутка элементов</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/size-and-scroll-window">Размеры и прокрутка окна</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/coordinates">Координаты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Введение в события</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/introduction-browser-events">Введение в браузерные события</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/bubbling-and-capturing">Всплытие и погружение</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/event-delegation">Делегирование событий</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/default-browser-action">Действия браузера по умолчанию</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/dispatch-events">Генерация пользовательских событий</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Интерфейсные события</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/mouse-events-basics">Основы событий мыши</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/mousemove-mouseover-mouseout-mouseenter-mouseleave">Движение мыши: mouseover/out, mouseenter/leave</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/mouse-drag-and-drop">Drag'n'Drop с событиями мыши</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/keyboard-events">Клавиатура: keydown и keyup</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/pointer-events">События указателя</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/onscroll">Прокрутка</a></li>
+          </ul>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Формы, элементы управления</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/form-elements">Свойства и методы формы</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/focus-blur">Фокусировка: focus/blur</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/events-change-input">События: change, input, cut, copy, paste</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/forms-submit">Отправка формы: событие и метод submit</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <h1 class="text-center">Загрузка документа и ресурсов</h1>
+          <ul>
+            <li><a target="_blank" href="https://learn.javascript.ru/onload-ondomcontentloaded">Страница: DOMContentLoaded, load, beforeunload, unload</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/script-async-defer">Скрипты: async, defer</a></li>
+            <li><a target="_blank" href="https://learn.javascript.ru/onload-onerror">Загрузка ресурсов: onload и onerror</a></li>
+          </ul>
         </div>
       </div>
+    </div>
 
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
