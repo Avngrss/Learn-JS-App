@@ -6,36 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Методы массивов</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img class="img-fluid" src="img/js.png" alt="JS" width="50" height="50" />
+          <img
+            class="img-fluid"
+            src="img/js.png"
+            alt="JS"
+            width="50"
+            height="50"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Методы </a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Методы
+              </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="string.html">Строк</a></li>
                 <li><a class="dropdown-item" href="array.html">Массивов</a></li>
+                <li>
+                  <a class="dropdown-item" href="aboutDOM.html"
+                    >События и DOM
+                  </a>
+                </li>
                 <li><a class="dropdown-item" href="#">Обьетов</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="js-sobesed.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Собеседование </a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="js-sobesed.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Собеседование
+              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="js-sobesed.html">по JS</a></li>
-                <li><a class="dropdown-item" href="Js-in-brouser.html">по браузерному JS</a></li>
-                <li><a class="dropdown-item" href="js-async.html">по асинхронному JS</a></li>
+                <li>
+                  <a class="dropdown-item" href="js-sobesed.html">по JS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Js-in-brouser.html"
+                    >по браузерному JS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="js-async.html"
+                    >по асинхронному JS</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="react.html">React</a></li>
               </ul>
             </li>
@@ -46,72 +97,318 @@
         </div>
       </div>
     </nav>
-    <div class="container">
+    <div class="container mt-3">
       <h1 class="text-center mt-3">Методы массивов</h1>
-      <div class="mt-3">
-        <i>ARRAY LENGTH</i>
-        <p>Метод length возвращает длину массива.</p>
-        <img class="img-fluid" src="img/lenght.jpg" alt="" />
+      <div class="item">
+        <div class="fw-bold">concat()</div>
+        <p>Объединяет элементы двух массивов в один массив</p>
+        <code class="">
+          const men = ["Tom", "Sam", "Bob"]; <br />
+          const women = ["Alice", "Kate"];
+          <br />
+          const people = men.concat(women); <br />
+          console.log(people); // ["Tom", "Sam", "Bob", "Alice", "Kate"] <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY PUSH</i>
-        <p>Метод push() добавляет один или несколько элементов в конец массива и возвращает новый размер массива.</p>
-        <img class="img-fluid" src="img/push.png" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">every()</div>
+        <p>
+          Метод every() проверяет, все ли элементы соответствуют определенному
+          условию:
+        </p>
+        <p>
+          В метод every() в качестве параметра передается функция, которая
+          представляет условие. Эта функция в качестве параметра принимает
+          элемент и возвращает true (если элемент соответствует условию) или
+          false (если не соответствует). Если хотя бы один элемент не
+          соответствует условию, то метод every() возвращает значение false.
+        </p>
+        <code class="">
+          const numbers = [ 1, -12, 8, -4, 25, 42 ]; <br />
+          const passed = numbers.every(n => n > 0); <br />
+          console.log(passed); // false <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY POP</i>
-        <p>Метод pop() удаляет последний элемент из массива и возвращает этот элемент. Этот метод изменяет длину массива.</p>
-        <img class="img-fluid" src="img/pop.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">filter()</div>
+        <p>фильтрует элементы массива</p>
+        <p>
+          В качестве параметра в filter передается функция-коллбек, которая
+          будет вызываться для текущего перебираемого элемента массива. В эту
+          функцию-коллбек можно перебрать до трех параметров. Коллбек возвращает
+          все элементы true (или значения, которые соответствует true), если
+          элемент удовлетворяет условию. В ином случае возвращается false.
+        </p>
+        <code class="">
+          const numbers = [ 1, -12, 8, -4, 25, 42 ];<br />
+          const filteredNumbers = numbers.filter(n => n > 0);<br />
+          console.log(filteredNumbers); // [1, 8, 25, 42]<br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY UNSHIFT</i>
-        <p>Метод unshift() добавляет один или несколько элементов в начало массива и возвращает новую длину массива.</p>
-        <img class="img-fluid" src="img/unshift.png" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">find()</div>
+        <p>
+          возвращает первый элемент массива, который соответствует некоторому
+          условию
+        </p>
+        <p>В качестве параметр метод find принимает функцию условия:</p>
+        <code class="">
+          const numbers = [1, 2, 3, 5, 8, 13, 21, 34]; <br />
+          // получаем первый элемент, который больше 10 <br />
+          let found = numbers.find(n => n > 10 ); <br />
+          console.log(found); // 13 <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY SHIFT</i>
-        <p>Метод shift() удаляет первый элемент из массива и возвращает этот элемент. Этот метод изменяет длину массива.</p>
-        <img class="img-fluid" src="img/shift.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">findIndex()</div>
+        <p>
+          Метод findIndex() возвращает индекс первого элемента массива, который
+          соответствует условию
+        </p>
+        <p>В качестве параметр метод findIndex принимает функцию условия:</p>
+        <code class="">
+          const numbers = [1, 2, 3, 5, 8, 13, 21, 34]; <br />
+          // получаем индекс первого элемента, который больше 10 <br />
+          let foundIndex = numbers.findIndex(n => n > 10 ); <br />
+          console.log(foundIndex); // 5 <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY FOREACH</i>
-        <p>Метод forEach() выполняет итерацию по элементам массива один за другим для выполнения функции.</p>
-        <img class="img-fluid" src="img/foeach.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">flat()</div>
+        <p>
+          Метод flat() упрощает массив с учетом указанной вложенности элементов:
+        </p>
+        <p>
+          То есть метод flat() фактически из вложенных массивов переводит
+          элементы во внешний массив самого верхнего уровня. Однако мы видим,
+          что элементы массива второго уровня вложенности перешли в массив
+          первого уровня вложенности, но тем не менее по-прежнему находятся во
+          вложенном массиве. Дело в том, что метод flat() по умолчанию
+          применяется только к вложенным массивам первого уровня вложенности. Но
+          мы можем передать в метод уровень вложености:
+        </p>
+        <code class="">
+          const people = ["Tom", "Bob", ["Alice", "Kate", ["Sam", "Ann"]]];
+          <br />
+          const flattenPeople = people.flat(Infinity); <br />
+          console.log(flattenPeople); // ["Tom", "Bob", "Alice", "Kate", "Sam",
+          "Ann"] <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY FILTER</i>
-        <p>Метод filter() создает и возвращает массив, содержащий элементы, проверяющие фильтр.</p>
-        <img class="img-fluid" src="img/filter.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">includes()</div>
+        <p>проверяет, есть ли в массиве значение</p>
+        <p>
+          Метод includes() проверяет, есть ли в массиве значение, переданное в
+          метод через параметр. Если такое значение есть, то метод возвращает
+          true, если значения в массиве нет, то возвращается false.
+        </p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob", "Tom", "Alice", "Sam"]; <br />
+          console.log(people.includes("Tom")); // true - Tom есть в массиве
+          <br />
+          console.log(people.includes("Kate")) // false - Kate нет в массиве
+          <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY MAP</i>
-        <p>Метод map() возвращает новый массив, содержащий все элементы исходного массива, для которого вызывается функция.</p>
-        <img class="img-fluid" src="img/map.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">indexOf() / lastIndexOf()</div>
+        <p>
+          возвращают индекс первого или последнего включения элемента в массиве.
+        </p>
+        <p>
+          Методы indexOf() и lastIndexOf() возвращают индекс первого и
+          последнего включения элемента в массиве.
+        </p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob", "Tom", "Alice", "Sam"]; <br />
+          const firstIndex = people.indexOf("Tom"); <br />
+          const lastIndex = people.lastIndexOf("Tom"); <br />
+          const otherIndex = people.indexOf("Mike"); <br />
+          console.log(firstIndex); // 0 <br />
+          console.log(lastIndex); // 3 <br />
+          console.log(otherIndex); // -1 <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY REDUCE</i>
-        <p>Метод reduce() применяет функцию, которая является «аккумулятором» и обрабатывает каждое значение в массиве (слева направо), чтобы уменьшить его до одного значения.</p>
-        <img class="img-fluid" src="img/reduce.png" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">join()</div>
+        <p>объединяет элементы массива в строку</p>
+        <p>
+          Метод join() объединяет все элементы массива в одну строку, используя
+          определенный разделитель, который передается через параметр:
+        </p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob"]; <br />
+          const peopleToString = people.join("; "); <br />
+          console.log(peopleToString); // Tom; Sam; Bob <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY SLICE</i>
-        <p>Метод slice() возвращает массив, содержащий копию части исходного массива, часть определяется начальным индексом и конечным индексом (исключая). Исходный массив не будет изменен.</p>
-        <img class="img-fluid" src="img/slice.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">map()</div>
+        <p>
+          преобразует каждый элемент массива в другое значение на основе функции
+          преобразования (проекция элементов)
+        </p>
+        <p>
+          Первый параметр - также функция-коллбек, в которую передаются текущий
+          перебираемый элемент, его индекс и ссылка на массив. А второй параметр
+          - значение для this внутри функции-коллбека. Но при этом метод map()
+          возвращает новый массив с результатами операций над элементами
+          массива.
+        </p>
+        <code class="">
+          const numbers = [ 1, 2, 3, 4, 5, 6]; <br />
+          const squares = numbers.map(n => n * n); <br />
+          console.log(squares); // [1, 4, 9, 16, 25, 36] <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY CONCAT</i>
-        <p>Метод concat() используется для объединения одного или нескольких массивов путем их объединения. Этот метод не изменяет существующие массивы, он возвращает новый массив, который является результатом операции.</p>
-        <img class="img-fluid" src="img/concat.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">pop()</div>
+        <p>Метод pop() удаляет последний элемент из массива:</p>
+        <p>В качестве результата метод pop возвращает удаленный элемент.</p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob", "Mike"]; <br />
+          const lastPerson = people.pop(); // извлекаем из массива последний
+          элемент <br />
+          console.log(lastPerson ); // Mike <br />
+          console.log(people); // ["Tom", "Sam", "Bob"] <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY JOIN</i>
-        <p>Метод join() создает и возвращает новую строку символов, объединяя все элементы массива. В конкатенации в качестве разделителя используется запятая или другая строка, указанная в качестве аргумента.</p>
-        <img class="img-fluid" src="img/join.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">push()</div>
+        <p>добавление элемента в конец массива</p>
+        <code class="">
+          const people = []; <br />
+          people.push("Tom"); <br />
+          people.push("Sam"); <br />
+          people.push("Bob","Mike"); <br />
+          console.log("В массиве people элементов: ", people.length); <br />
+          console.log(people); // ["Tom", "Sam", "Bob", "Mike"] <br />
+        </code>
       </div>
-      <div class="mt-3">
-        <i>ARRAY REVERSE</i>
-        <p>Метод reverse() переворачивает массив. Первый элемент массива становится последним, а последний элемент массива становится первым.</p>
-        <img class="img-fluid" src="img/reverse.jpg" alt="" />
+      <div class="item mt-3">
+        <div class="fw-bold">reduce()</div>
+        <p>
+          Метод reduce позволяет свести все значения массива в одно значение,
+          которое возвращается из метода. В качестве параметра метод принимает
+          функцию с 4 параметрами
+        </p>
+        <code>function (prev,current, curIndex, array){ .... }</code>
+        <p>
+          prev: предыдущий элемент (в начале - самый первый элемент) <br />
+          current: текущий элемент (в начале - второй элемент) <br />
+          curIndex: индекс текущего элемента <br />
+          array: массив, для которого вызывается функция <br />
+        </p>
+        <code class="">
+          const numbers = [1, 2, 3, 4, 5]; <br />
+          const sum = numbers.reduce((prev,current) => prev +current, 10);
+          <br />
+          console.log(sum); // 25 <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">reverse() и toReversed()</div>
+        <p>располагает элементы массива в обратном порядке</p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob"]; <br />
+          const reversed = people.toReversed(); <br />
+          console.log(people); // ["Tom", "Sam", "Bob"] <br />
+          console.log(reversed); // ["Bob", "Sam", "Tom"] <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">shift()</div>
+        <p>Метод shift() извлекает и удаляет первый элемент из массива:</p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob", "Mike"]; <br />
+          const first = people.shift(); // извлекаем из массива первый элемент
+          <br />
+          console.log(first); // Tom <br />
+          console.log(people); // ["Sam", "Bob", "Mike"] <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">slice()</div>
+        <p>вырезает отдельные элементы из массива</p>
+        <p>
+          Копирование массива может быть поверхностным или неглубоким (shallow
+          copy) и глубоким (deep copy). При неглубоком копировании достаточно
+          присвоить переменной значение другой переменной, которая хранит
+          массив:
+        </p>
+        <code class="">
+          const users = ["Tom", "Sam", "Bill"]; <br />
+          console.log(users); // ["Tom", "Sam", "Bill"] <br />
+          const people = users; // неглубокое копирование <br />
+          people[1] = "Mike"; // изменяем второй элемент <br />
+          console.log(users); // ["Tom", "Mike", "Bill"] <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">splice()</div>
+        <p>добавление элементы на определенную позицию в массиве</p>
+        <p>
+          Метод splice позволяет вставить элементы на определенную позицию.
+          Первый аргумент представляет индекс в массиве, по которому надо
+          добавить новые элементы. Второй аргумент представляет количество
+          элементов, которые необходимо удалить(! этот метод также применяется
+          для удаления). Для добавления для этого аргумента устанавливается
+          значение 0. Все остальные аргументы представляют элементы, которые
+          необходимо добавить в массив.:
+        </p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob"]; <br />
+          people.splice(1, 0, "Alice"); // добавляем элемент "Alice" по индексу
+          1 <br />
+          console.log(people); // ["Tom", "Alice", "Sam", "Bob"] <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">some()</div>
+        <p>проверяет, соответствует ли хотя бы один элемент условию.</p>
+        <p>
+          Метод some() похож на метод every(), только он проверяет,
+          соответствует ли хотя бы один элемент условию. И в этом случае метод
+          some() возвращает true. Если элементов, соответствующих условию, в
+          массиве нет, то возвращается значение false:
+        </p>
+        <code class="">
+          const numbers = [ 1, -12, 8, -4, 25, 42 ]; <br />
+          const passed = numbers.some(n => n > 0); <br />
+          console.log(passed); // true <br />
+        </code>
+      </div>
+      <div class="item mt-3">
+        <div class="fw-bold">sort() и toSorted</div>
+        <p>Метод sort() сортирует массив по возрастанию:</p>
+        <p>
+          Метод some() похож на метод every(), только он проверяет,
+          соответствует ли хотя бы один элемент условию. И в этом случае метод
+          some() возвращает true. Если элементов, соответствующих условию, в
+          массиве нет, то возвращается значение false:
+        </p>
+        <code class="">
+          const people = ["Tom", "Sam", "Bob"]; <br />
+          people.sort(); <br />
+          console.log(people); // ["Bob", "Sam", "Tom"] <br />
+        </code>
+        <code class="">
+          const numbers = [200, 15, 5, 35]; <br />
+          numbers.sort( (a, b) => a - b); <br />
+          console.log(numbers); // [5, 15, 35, 200] <br />
+        </code>
+      </div>
+      <div class="item mt-3 mb-3">
+        <div class="fw-bold">unshift()</div>
+        <p>Метод unshift() добавляет новый элемент в начало массива:</p>
+        <code class="">
+          const people = ["Bob"]; <br />
+          people.unshift("Alice"); <br />
+          console.log(people); // ["Alice", "Bob" <br />
+          people.unshift("Tom", "Sam"); <br />
+          console.log(people); // ["Tom", "Sam", "Alice", "Bob"] <br />
+        </code>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

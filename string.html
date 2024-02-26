@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Методы строк</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
@@ -17,25 +23,64 @@
         <a class="navbar-brand" href="index.html">
           <img src="img/js.png" alt="JS" width="50" height="50" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Методы </a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Методы
+              </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="string.html">Строк</a></li>
                 <li><a class="dropdown-item" href="array.html">Массивов</a></li>
                 <li><a class="dropdown-item" href="#">Обьетов</a></li>
+                <li>
+                  <a class="dropdown-item" href="aboutDOM.html"
+                    >События и DOM
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="js-sobesed.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Собеседование </a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="js-sobesed.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Собеседование
+              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="js-sobesed.html">по JS</a></li>
-                <li><a class="dropdown-item" href="Js-in-brouser.html">по браузерному JS</a></li>
-                <li><a class="dropdown-item" href="js-async.html">по асинхронному JS</a></li>
+                <li>
+                  <a class="dropdown-item" href="js-sobesed.html">по JS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Js-in-brouser.html"
+                    >по браузерному JS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="js-async.html"
+                    >по асинхронному JS</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="react.html">React</a></li>
               </ul>
             </li>
@@ -69,11 +114,16 @@
       </div>
       <h1 class="text-center mt-3">Как разделить строку на подстроки</h1>
       <b>split</b>
-      <p>Разбивает строку в массив по указанному разделителю, которым может быть подстрока или регулярное выражение. Вторым параметром можно указать ограничитель.</p>
+      <p>
+        Разбивает строку в массив по указанному разделителю, которым может быть
+        подстрока или регулярное выражение. Вторым параметром можно указать
+        ограничитель.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           // Получаем каждый символ <br />
-          "Hello Tproger".split(""); // ["H", "e", "l", "l", "o", " ", "T", "p", "r", "o", "g", "e", "r"]<br />
+          "Hello Tproger".split(""); // ["H", "e", "l", "l", "o", " ", "T", "p",
+          "r", "o", "g", "e", "r"]<br />
           // Получаем каждое слово из строки<br />
           "Hello Tproger".split(" "); //["Hello", "Tproger"]<br />
           // Устанавливаем ограничитель<br />
@@ -82,7 +132,10 @@
       </div>
       <h1 class="text-center mt-3">Как повторить строку</h1>
       <b>repeat</b>
-      <p>Принимает в качестве параметра число и повторяет строку указанное количество раз.</p>
+      <p>
+        Принимает в качестве параметра число и повторяет строку указанное
+        количество раз.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code> "Tproger ".repeat(3); // "Tproger Tproger Tproger " </code>
       </div>
@@ -93,7 +146,11 @@
         <code> "Hello Tproger".charAt(); // "H" </code>
       </div>
       <b>includes</b>
-      <p>Проверяет, содержит ли строка указанную подстроку. Возвращает значение true или false. Вторым параметром можно указать позицию в строке, с которой следует начать поиск.</p>
+      <p>
+        Проверяет, содержит ли строка указанную подстроку. Возвращает значение
+        true или false. Вторым параметром можно указать позицию в строке, с
+        которой следует начать поиск.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Hello Tproger".includes("Tproger"); // true <br />
@@ -101,7 +158,12 @@
         </code>
       </div>
       <b>indexOf</b>
-      <p>Возвращает индекс первого найденного вхождения указанного значения. Поиск ведётся от начала до конца строки. Если совпадений нет, возвращает -1. Вторым параметром можно передать позицию, с которой следует начать поиск.</p>
+      <p>
+        Возвращает индекс первого найденного вхождения указанного значения.
+        Поиск ведётся от начала до конца строки. Если совпадений нет, возвращает
+        -1. Вторым параметром можно передать позицию, с которой следует начать
+        поиск.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Hello World".indexOf("o"); // 4 <br />
@@ -109,7 +171,12 @@
         </code>
       </div>
       <b>lastIndexOf</b>
-      <p>Возвращает индекс последнего найденного вхождения указанного значения. Поиск ведётся от конца к началу строки. Если совпадений нет, возвращает -1. Вторым параметром можно передать позицию, с которой следует начать поиск.</p>
+      <p>
+        Возвращает индекс последнего найденного вхождения указанного значения.
+        Поиск ведётся от конца к началу строки. Если совпадений нет, возвращает
+        -1. Вторым параметром можно передать позицию, с которой следует начать
+        поиск.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Hello World".lastIndexOf("o"); // 7 <br />
@@ -117,7 +184,11 @@
         </code>
       </div>
       <b>startsWith</b>
-      <p>Проверяет, начинается ли строка с указанных символов. Возвращает true или false. Вторым параметром можно указать индекс, с которого следует начать проверку.</p>
+      <p>
+        Проверяет, начинается ли строка с указанных символов. Возвращает true
+        или false. Вторым параметром можно указать индекс, с которого следует
+        начать проверку.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Hello Tproger".startsWith("Hello"); // true <br />
@@ -125,7 +196,12 @@
         </code>
       </div>
       <b>endsWith</b>
-      <p>Проверяет, заканчивается ли строка символами, заданными первым параметром. Возвращает true или false. Есть второй необязательный параметр — ограничитель по диапазону поиска. По умолчанию он равен длине строки.</p>
+      <p>
+        Проверяет, заканчивается ли строка символами, заданными первым
+        параметром. Возвращает true или false. Есть второй необязательный
+        параметр — ограничитель по диапазону поиска. По умолчанию он равен длине
+        строки.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Hello Tproger".endsWith("Tproger"); // true <br />
@@ -133,13 +209,20 @@
         </code>
       </div>
       <b>search</b>
-      <p>Проверяет, есть ли в строке указанное значение или регулярное выражение и возвращает индекс начала совпадения.</p>
+      <p>
+        Проверяет, есть ли в строке указанное значение или регулярное выражение
+        и возвращает индекс начала совпадения.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code> "hi, hello, hey".search("hello"); // 4 </code>
       </div>
       <h1 class="text-center mt-3">Как извлечь подстроку</h1>
       <b>slice</b>
-      <p>Извлекает часть строки и возвращает новую строку. Обязательный параметр — начало извлечения. Вторым параметром можно установить границу (по умолчанию — до конца строки).</p>
+      <p>
+        Извлекает часть строки и возвращает новую строку. Обязательный параметр
+        — начало извлечения. Вторым параметром можно установить границу (по
+        умолчанию — до конца строки).
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Методы строк на Tproger".slice(16); // "Tproger"<br />
@@ -150,12 +233,22 @@
         </code>
       </div>
       <b>substring</b>
-      <p>Извлекает символы из строки между двумя указанными индексами. Второй индекс указывать не обязательно. В таком случае будут извлечены все символы от начала до конца строки. В отличие от slice, можно задавать start больше, чем end. Отрицательные значения не поддерживаются, они интерпретируются как 0.</p>
+      <p>
+        Извлекает символы из строки между двумя указанными индексами. Второй
+        индекс указывать не обязательно. В таком случае будут извлечены все
+        символы от начала до конца строки. В отличие от slice, можно задавать
+        start больше, чем end. Отрицательные значения не поддерживаются, они
+        интерпретируются как 0.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code> "Методы строк на Tproger".substring(5, 2); // "тод" </code>
       </div>
       <b>substr</b>
-      <p>Извлекает часть строки указанной длины. Первым параметром принимает стартовую позицию, вторым — длину. Значение первого параметра может быть отрицательным, тогда позиция определяется с конца строки.</p>
+      <p>
+        Извлекает часть строки указанной длины. Первым параметром принимает
+        стартовую позицию, вторым — длину. Значение первого параметра может быть
+        отрицательным, тогда позиция определяется с конца строки.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "Методы строк на Tproger".substr(7, 5); // "строк" <br />
@@ -164,7 +257,12 @@
       </div>
       <h1 class="text-center mt-3">Как заменить подстроку</h1>
       <b>replace</b>
-      <p>Ищет в строке указанное значение или регулярное выражение и возвращает новую строку, в которой выполнена замена на второй параметр. Можно заменить найденные значения другой строкой или передать функцию для работы над совпадениями.</p>
+      <p>
+        Ищет в строке указанное значение или регулярное выражение и возвращает
+        новую строку, в которой выполнена замена на второй параметр. Можно
+        заменить найденные значения другой строкой или передать функцию для
+        работы над совпадениями.
+      </p>
       <div class="bg-success p-2 text-dark bg-opacity-25 mt-3">
         <code>
           "hi, hello, hi".replace("hi", "hey"); // "hey, hello, hi" <br />
